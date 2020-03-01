@@ -3,6 +3,7 @@ import App from "./App";
 import router from "./router";
 import Antd from "ant-design-vue";
 import "ant-design-vue/dist/antd.css";
+import 'babel-polyfill';
 
 Vue.config.productionTip = false;
 Vue.use(Antd);

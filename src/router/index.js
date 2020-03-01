@@ -20,7 +20,41 @@ export default new Router({
                     path: "/222111",
                     name: "222111",
                     component: resolve =>
-                        require(["@/views/storehouse/inStorehouse.vue"], resolve)
+                        require([
+                            "@/views/storehouse/storehouseIn.vue"
+                        ], resolve)
+                },
+                {
+                    path: "/222222",
+                    name: "222222",
+                    component: resolve =>
+                        require([
+                            "@/views/storehouse/storehouseOut.vue"
+                        ], resolve)
+                },
+                {
+                    path: "/222333",
+                    name: "222333",
+                    component: resolve =>
+                        require([
+                            "@/views/storehouse/storehouseCheck.vue"
+                        ], resolve)
+                },
+                {
+                    path: "/333111",
+                    name: "333111",
+                    component: resolve =>
+                        require([
+                            "@/views/setting/dictManage.vue"
+                        ], resolve)
+                },
+                {
+                    path: "/333222",
+                    name: "333222",
+                    component: resolve =>
+                        require([
+                            "@/views/setting/parameterManage.vue"
+                        ], resolve)
                 }
             ]
         }

@@ -7,7 +7,7 @@
             <a-menu
                 theme="dark"
                 mode="inline"
-                :defaultSelectedKeys="['1']"
+                :defaultSelectedKeys="['111']"
                 @click="menuClick"
             >
                 <template v-for="item in menuList">
@@ -92,7 +92,16 @@ export default {
                 {
                     key: "333",
                     title: "系统管理",
-                    icon: "setting"
+                    icon: "setting",
+                    children: [
+                        {
+                            key: "333111",
+                            title: "数据字典"
+                        }, {
+                            key: "333222",
+                            title: "参数管理"
+                        },
+                    ]
                 }
             ]
         };
